@@ -12,8 +12,8 @@ else:
 
 
 
-  yas = bu_yil - dogum_yili
+ if dogum_yili > bu_yil:
+    print("Lütfen Geçerli Tarih Girin")
+else:
+    yas = bu_yil - dogum_yili
     print(f"Merhaba {ad}! Bu yıl {yas} yaşına giriyorsun.")
-
-yas = bu_yil - dogum_yili  # Kullanıcının bu yıl dolduracağı yaşı hesaplar.
-print(f"Merhaba {ad}! Bu yıl {yas} yaşına giriyorsun.")  # Kişiye özel mesajı gösterir.
